@@ -1,0 +1,136 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+    {% block styles %}
+
+    {% endblock %}
+
+        {% block content %}
+						<!-- PAGE HEADER -->
+                        <div class="page-header d-lg-flex d-block">
+							<div class="page-leftheader">
+								<div class="page-title">Echart</div>
+							</div>
+							<div class="page-rightheader ms-md-auto">
+								<div class=" btn-list">
+									<button  class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="E-mail"> <i class="feather feather-mail"></i> </button>
+									<button  class="btn btn-light" data-bs-placement="top" data-bs-toggle="tooltip" title="Contact"> <i class="feather feather-phone-call"></i> </button>
+									<button  class="btn btn-primary" data-bs-placement="top" data-bs-toggle="tooltip" title="Info"> <i class="feather feather-info"></i> </button>
+								</div>
+							</div>
+						</div>
+						<!-- PAGE HEADER -->
+
+						<!-- ROW -->
+						<div class="row">
+							<div class="col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<h3 class="card-title">Line chart</h3>
+									</div>
+									<div class="card-body">
+										<div id="echart1" class="chartsh "></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<h3 class="card-title">Combination of Line & Bar Chart</h3>
+									</div>
+									<div class="card-body">
+										<div id="echart2" class="chartsh "></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END ROW -->
+
+						<!-- ROW -->
+						<div class="row">
+							<div class="col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<h3 class="card-title">Vertical Line chart</h3>
+									</div>
+									<div class="card-body">
+										<div id="echart3" class="chartsh "></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<h3 class="card-title">Vertical Combination of Line & Bar Chart</h3>
+									</div>
+									<div class="card-body">
+										<div id="echart4" class="chartsh "></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END ROW -->
+
+						<!-- ROW -->
+						<div class="row">
+							<div class="col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<h3 class="card-title">Bar Chart</h3>
+									</div>
+									<div class="card-body">
+										<div id="echart5" class="chartsh "></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<h3 class="card-title">Horizontal Bar Chart</h3>
+									</div>
+									<div class="card-body">
+										<div id="echart6" class="chartsh "></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END ROW -->
+
+						<!-- ROW -->
+						<div class="row">
+							<div class="col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<h3 class="card-title">Single line chart</h3>
+									</div>
+									<div class="card-body">
+										<div id="echart7" class="chartsh "></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<h3 class="card-title">Single smooth line chart</h3>
+									</div>
+									<div class="card-body">
+										<div id="echart8" class="chartsh "></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END ROW -->
+        {% endblock %}
+
+		{% block modal %}
+			
+        {% endblock %}
+		
+    {% block scripts %}
+		<!-- INTERNAL ECHARTS JS -->
+        <script src="{% static 'assets/plugins/echarts/echarts.js'%}"></script>
+		<script src="{% static 'assets/js/echarts.js'%}"></script>
+
+        <!-- THEME COLOR JS -->
+		<script src="{% static 'assets/js/themeColors.js'%}"></script>
+	{% endblock %}

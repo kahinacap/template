@@ -1,0 +1,139 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+    {% block styles %}
+
+    {% endblock %}
+
+        {% block content %}
+						<!-- PAGE HEADER -->
+                        <div class="page-header d-lg-flex d-block">
+							<div class="page-leftheader">
+								<div class="page-title">Flot Chart</div>
+							</div>
+							<div class="page-rightheader ms-md-auto">
+								<div class=" btn-list">
+									<button  class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="E-mail"> <i class="feather feather-mail"></i> </button>
+									<button  class="btn btn-light" data-bs-placement="top" data-bs-toggle="tooltip" title="Contact"> <i class="feather feather-phone-call"></i> </button>
+									<button  class="btn btn-primary" data-bs-placement="top" data-bs-toggle="tooltip" title="Info"> <i class="feather feather-info"></i> </button>
+								</div>
+							</div>
+						</div>
+						<!-- END PAGE HEADER -->
+
+						<!-- ROW -->
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="card overflow-hidden">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Bar Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="h-300" id="flotBar1"></div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+							<div class="col-lg-6">
+								<div class="card overflow-hidden">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Bar Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="h-300" id="flotBar2"></div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+						</div>
+						<!-- END ROW -->
+
+						<!-- ROW -->
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="card overflow-hidden">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Line Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="h-300" id="flotLine1"></div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+							<div class="col-lg-6">
+								<div class="card overflow-hidden">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Line Chart Points</div>
+									</div>
+									<div class="card-body">
+										<div class="h-300" id="flotLine2"></div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+						</div>
+						<!-- END ROW -->
+
+						<!-- ROW -->
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="card overflow-hidden">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Area Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="h-300" id="flotArea1"></div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+							<div class="col-lg-6">
+								<div class="card overflow-hidden">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Area Chart Points</div>
+									</div>
+									<div class="card-body">
+										<div class="h-300" id="flotArea2"></div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+						</div>
+						<!-- END ROW -->
+
+						<!-- ROW -->
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="card overflow-hidden">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Pie Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="h-300" id="flotPie1"></div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+							<div class="col-lg-6">
+								<div class="card overflow-hidden">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Donut Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="h-300" id="flotPie2"></div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+						</div>
+						<!-- END ROW -->
+        {% endblock %}
+
+		{% block modal %}
+			
+        {% endblock %}
+		
+    {% block scripts %}
+		<!-- INTERNAL FLOT CHARTS JS -->
+        <script src="{% static 'assets/plugins/flot/jquery.flot.js'%}"></script>
+		<script src="{% static 'assets/plugins/flot/jquery.flot.fillbetween.js'%}"></script>
+		<script src="{% static 'assets/plugins/flot/jquery.flot.pie.js'%}"></script>
+		<script src="{% static 'assets/plugins/flot/jquery.flot.resize.js'%}"></script>
+		<script src="{% static 'assets/js/flot.js'%}"></script>
+
+        <!-- THEME COLOR JS -->
+		<script src="{% static 'assets/js/themeColors.js'%}"></script>
+	{% endblock %}

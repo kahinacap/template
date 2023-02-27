@@ -1,0 +1,194 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+    {% block styles %}
+
+    {% endblock %}
+
+        {% block content %}
+						<!-- PAGE HEADER -->
+                        <div class="page-header d-lg-flex d-block">
+							<div class="page-leftheader">
+								<div class="page-title">Chartist Chart</div>
+							</div>
+							<div class="page-rightheader ms-md-auto">
+								<div class=" btn-list">
+									<button  class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="E-mail"> <i class="feather feather-mail"></i> </button>
+									<button  class="btn btn-light" data-bs-placement="top" data-bs-toggle="tooltip" title="Contact"> <i class="feather feather-phone-call"></i> </button>
+									<button  class="btn btn-primary" data-bs-placement="top" data-bs-toggle="tooltip" title="Info"> <i class="feather feather-info"></i> </button>
+								</div>
+							</div>
+						</div>
+						<!-- END PAGE HEADER -->
+
+						<!-- ROW -->
+						<div class="row">
+							<div class="col-sm-12 col-md-12 col-xl-4">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Bar Chart</div>
+									</div>
+									<div class="card-body">
+										<div>
+											<canvas id="chartBar1" class="h-300"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-12 col-xl-4">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Transparency </div>
+									</div>
+									<div class="card-body">
+										<div>
+											<canvas id="chartBar2" class="h-300"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-12 col-xl-4">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Gradient Bar Chart</div>
+									</div>
+									<div class="card-body">
+										<div>
+											<canvas id="chartBar3" class="h-300"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END ROW -->
+
+						<!-- ROW -->
+						<div class="row">
+							<div class="col-sm-12 col-xl-6">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Horizontal Bar Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="chartjs-wrapper-demo">
+											<canvas id="chartBar4" class="h-300"></canvas>
+										</div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+							<div class="col-sm-12 col-xl-6">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Horizontal Bar Chart Style2</div>
+									</div>
+									<div class="card-body">
+										<div class="chartjs-wrapper-demo">
+											<canvas id="chartBar5" class="h-300"></canvas>
+										</div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+						</div>
+						<!-- END ROW -->
+
+						<!-- ROW -->
+						<div class="row">
+							<div class="col-sm-12 col-xl-6">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Vertical Stacked Bar Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="chartjs-wrapper-demo">
+											<canvas id="chartStacked1" class="h-300"></canvas>
+										</div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+							<div class="col-sm-12 col-xl-6">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Horizontal Stacked Bar Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="chartjs-wrapper-demo">
+											<canvas id="chartStacked2" class="h-300"></canvas>
+										</div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+						</div>
+						<!-- END ROW -->
+
+						<!-- ROW -->
+						<div class="row">
+							<div class="col-sm-12 col-xl-6">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Line Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="chartjs-wrapper-demo">
+											<canvas id="chartLine1" class="h-300"></canvas>
+										</div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+							<div class="col-sm-12 col-xl-6">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Area Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="chartjs-wrapper-demo">
+											<canvas id="chartArea1" class="h-300"></canvas>
+										</div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+						</div>
+						<!-- END ROW -->
+
+						<!-- ROW -->
+						<div class="row">
+							<div class="col-sm-12 col-xl-6">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Donut Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="chartjs-wrapper-demo">
+											<canvas id="chartPie" class="h-300"></canvas>
+										</div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+							<div class="col-sm-12 col-xl-6">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<div class="card-title">Pie Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="chartjs-wrapper-demo">
+											<canvas id="chartDonut" class="h-300"></canvas>
+										</div>
+									</div>
+								</div>
+							</div><!-- col-6 -->
+						</div>
+						<!-- END ROW -->
+        {% endblock %}
+
+		{% block modal %}
+			
+        {% endblock %}
+		
+    {% block scripts %}
+		<!-- INTERNAL CHARTS JS -->
+        <script src="{% static 'assets/plugins/chart/chart.bundle.js'%}"></script>
+		<script src="{% static 'assets/plugins/chart/utils.js'%}"></script>
+		<script src="{% static 'assets/js/chart.js'%}"></script>
+
+        <!-- THEME COLOR JS -->
+		<script src="{% static 'assets/js/themeColors.js'%}"></script>
+	{% endblock %}

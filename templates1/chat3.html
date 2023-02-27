@@ -1,0 +1,561 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+    {% block styles %}
+
+    {% endblock %}
+
+        {% block content %}
+						<!-- PAGE HEADER -->
+                        <div class="page-header d-lg-flex d-block">
+							<div class="page-leftheader">
+								<div class="page-title">Chat 03</div>
+							</div>
+							<div class="page-rightheader ms-md-auto">
+								<div class=" btn-list">
+									<button  class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="E-mail"> <i class="feather feather-mail"></i> </button>
+									<button  class="btn btn-light" data-bs-placement="top" data-bs-toggle="tooltip" title="Contact"> <i class="feather feather-phone-call"></i> </button>
+									<button  class="btn btn-primary" data-bs-placement="top" data-bs-toggle="tooltip" title="Info"> <i class="feather feather-info"></i> </button>
+								</div>
+							</div>
+						</div>
+						<!-- END  PAGE HEADER -->
+
+                        <!-- ROW -->
+						<div class="row">
+							<div class="col-md-12 col-lg-12">
+								<div class="row">
+
+									<!-- col -->
+									<div class="col-lg-6">
+										<div class="card">
+											<div class="card-body p-0">
+												<div class="chat-widget-header d-flex p-5">
+													<div class="font-weight-bold d-flex">
+														<img  class="avatat avatar-md brround me-2" src="{% static 'assets/images/users/1.jpg'%}" alt="img">
+														<div class="mt-1 d-none d-xl-block">
+															<h6 class="font-weight-semibold mb-0">Shamika Griffith</h6>
+															<small>shamikagriffith@gmail.com</small>
+														</div>
+													</div>
+													<div class="ms-auto">
+														<div class="d-flex">
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#chatmodel"><span class="feather feather-message-square"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="call"><span class="feather feather-phone-call"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="Video Cal"><span class="feather feather-video"></span></a>
+															<a class="option-dots new-list2" data-bs-toggle="dropdown"  href="javascript:void(0);"><span class="feather feather-more-vertical"></span></a>
+															<div class="dropdown-menu tx-13 dropdown-menu-start">
+																<a class="dropdown-item"  href="javascript:void(0);">Assigned to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Unread</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Important</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add to Tasks</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add Star</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mute</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to Trash</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /col -->
+									<!-- col -->
+									<div class="col-lg-6">
+										<div class="card">
+											<div class="card-body p-0">
+												<div class="chat-widget-header d-flex p-5">
+													<div class="font-weight-bold d-flex">
+														<img  class="avatat avatar-md brround me-2" src="{% static 'assets/images/users/2.jpg'%}" alt="img">
+														<div class="mt-1 d-none d-xl-block">
+															<h6 class="font-weight-semibold mb-0">Margarette Wycoff</h6>
+															<small>margarettewycoff@gmail.com</small>
+														</div>
+													</div>
+													<div class="ms-auto">
+														<div class="d-flex">
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#chatmodel"><span class="feather feather-message-square"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="call"><span class="feather feather-phone-call"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="Video Cal"><span class="feather feather-video"></span></a>
+															<a class="option-dots new-list2" data-bs-toggle="dropdown"  href="javascript:void(0);"><span class="feather feather-more-vertical"></span></a>
+															<div class="dropdown-menu tx-13 dropdown-menu-start">
+																<a class="dropdown-item"  href="javascript:void(0);">Assigned to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Unread</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Important</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add to Tasks</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add Star</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mute</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to Trash</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /col -->
+									<!-- col -->
+									<div class="col-lg-6">
+										<div class="card">
+											<div class="card-body p-0">
+												<div class="chat-widget-header d-flex p-5">
+													<div class="font-weight-bold d-flex">
+														<img class="avatat avatar-md brround me-2" src="{% static 'assets/images/users/3.jpg'%}" alt="img">
+														<div class="mt-1 d-none d-xl-block">
+															<h6 class="font-weight-semibold mb-0">Myrta Powe</h6>
+															<small>myrtapower@gmail.com</small>
+														</div>
+													</div>
+													<div class="ms-auto">
+														<div class="d-flex">
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#chatmodel"><span class="feather feather-message-square"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="call"><span class="feather feather-phone-call"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="Video Cal"><span class="feather feather-video"></span></a>
+															<a class="option-dots new-list2" data-bs-toggle="dropdown"  href="javascript:void(0);"><span class="feather feather-more-vertical"></span></a>
+															<div class="dropdown-menu tx-13 dropdown-menu-start">
+																<a class="dropdown-item"  href="javascript:void(0);">Assigned to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Unread</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Important</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add to Tasks</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add Star</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mute</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to Trash</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /col -->
+									<!-- col -->
+									<div class="col-lg-6">
+										<div class="card">
+											<div class="card-body p-0">
+												<div class="chat-widget-header d-flex p-5">
+													<div class="font-weight-bold d-flex">
+														<img class="avatat avatar-md brround me-2" src="{% static 'assets/images/users/4.jpg'%}" alt="img">
+														<div class="mt-1 d-none d-xl-block">
+															<h6 class="font-weight-semibold mb-0">Consuelo Valenzuela</h6>
+															<small>consuelovalenzuela@gmail.com</small>
+														</div>
+													</div>
+													<div class="ms-auto">
+														<div class="d-flex">
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#chatmodel"><span class="feather feather-message-square"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="call"><span class="feather feather-phone-call"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="Video Cal"><span class="feather feather-video"></span></a>
+															<a class="option-dots new-list2" data-bs-toggle="dropdown"  href="javascript:void(0);"><span class="feather feather-more-vertical"></span></a>
+															<div class="dropdown-menu tx-13 dropdown-menu-start">
+																<a class="dropdown-item"  href="javascript:void(0);">Assigned to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Unread</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Important</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add to Tasks</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add Star</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mute</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to Trash</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /col -->
+									<!-- col -->
+									<div class="col-lg-6">
+										<div class="card">
+											<div class="card-body p-0">
+												<div class="chat-widget-header d-flex p-5">
+													<div class="font-weight-bold d-flex">
+														<img class="avatat avatar-md brround me-2" src="{% static 'assets/images/users/5.jpg'%}" alt="img">
+														<div class="mt-1 d-none d-xl-block">
+															<h6 class="font-weight-semibold mb-0">Carolyne Wirtz</h6>
+															<small>carolynewirtz@gmail.com</small>
+														</div>
+													</div>
+													<div class="ms-auto">
+														<div class="d-flex">
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#chatmodel"><span class="feather feather-message-square"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="call"><span class="feather feather-phone-call"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="Video Cal"><span class="feather feather-video"></span></a>
+															<a class="option-dots new-list2" data-bs-toggle="dropdown"  href="javascript:void(0);"><span class="feather feather-more-vertical"></span></a>
+															<div class="dropdown-menu tx-13 dropdown-menu-start">
+																<a class="dropdown-item"  href="javascript:void(0);">Assigned to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Unread</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Important</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add to Tasks</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add Star</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mute</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to Trash</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /col -->
+									<!-- col -->
+									<div class="col-lg-6">
+										<div class="card">
+											<div class="card-body p-0">
+												<div class="chat-widget-header d-flex p-5">
+													<div class="font-weight-bold d-flex">
+														<img class="avatat avatar-md brround me-2" src="{% static 'assets/images/users/6.jpg'%}" alt="img">
+														<div class="mt-1 d-none d-xl-block">
+															<h6 class="font-weight-semibold mb-0">Archie Kesler</h6>
+															<small>archiekesler@gmail.com</small>
+														</div>
+													</div>
+													<div class="ms-auto">
+														<div class="d-flex">
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#chatmodel"><span class="feather feather-message-square"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="call"><span class="feather feather-phone-call"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="Video Cal"><span class="feather feather-video"></span></a>
+															<a class="option-dots new-list2" data-bs-toggle="dropdown"  href="javascript:void(0);"><span class="feather feather-more-vertical"></span></a>
+															<div class="dropdown-menu tx-13 dropdown-menu-start">
+																<a class="dropdown-item"  href="javascript:void(0);">Assigned to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Unread</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Important</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add to Tasks</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add Star</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mute</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to Trash</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /col -->
+									<!-- col -->
+									<div class="col-lg-6">
+										<div class="card">
+											<div class="card-body p-0">
+												<div class="chat-widget-header d-flex p-5">
+													<div class="font-weight-bold d-flex">
+														<img  class="avatat avatar-md brround me-2" src="{% static 'assets/images/users/9.jpg'%}" alt="img">
+														<div class="mt-1 d-none d-xl-block">
+															<h6 class="font-weight-semibold mb-0">Elizabeth Loux</h6>
+															<small>elizabethloux@gmail.com</small>
+														</div>
+													</div>
+													<div class="ms-auto">
+														<div class="d-flex">
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#chatmodel"><span class="feather feather-message-square"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="call"><span class="feather feather-phone-call"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="Video Cal"><span class="feather feather-video"></span></a>
+															<a class="option-dots new-list2" data-bs-toggle="dropdown"  href="javascript:void(0);"><span class="feather feather-more-vertical"></span></a>
+															<div class="dropdown-menu tx-13 dropdown-menu-start">
+																<a class="dropdown-item"  href="javascript:void(0);">Assigned to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Unread</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Important</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add to Tasks</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add Star</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mute</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to Trash</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /col -->
+									<!-- col -->
+									<div class="col-lg-6">
+										<div class="card">
+											<div class="card-body p-0">
+												<div class="chat-widget-header d-flex p-5">
+													<div class="font-weight-bold d-flex">
+														<img  class="avatat avatar-md brround me-2" src="{% static 'assets/images/users/10.jpg'%}" alt="img">
+														<div class="mt-1 d-none d-xl-block">
+															<h6 class="font-weight-semibold mb-0">Kathaleen Roysden</h6>
+															<small>kathaleenroysden@gmail.com</small>
+														</div>
+													</div>
+													<div class="ms-auto">
+														<div class="d-flex">
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#chatmodel"><span class="feather feather-message-square"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="call"><span class="feather feather-phone-call"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="Video Cal"><span class="feather feather-video"></span></a>
+															<a class="option-dots new-list2" data-bs-toggle="dropdown"  href="javascript:void(0);"><span class="feather feather-more-vertical"></span></a>
+															<div class="dropdown-menu tx-13 dropdown-menu-start">
+																<a class="dropdown-item"  href="javascript:void(0);">Assigned to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Unread</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Important</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add to Tasks</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add Star</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mute</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to Trash</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /col -->
+									<!-- col -->
+									<div class="col-lg-6">
+										<div class="card">
+											<div class="card-body p-0">
+												<div class="chat-widget-header d-flex p-5">
+													<div class="font-weight-bold d-flex">
+														<img  class="avatat avatar-md brround me-2" src="{% static 'assets/images/users/11.jpg'%}" alt="img">
+														<div class="mt-1 d-none d-xl-block">
+															<h6 class="font-weight-semibold mb-0">Raisa Ladwig</h6>
+															<small>raisaladwig@gmail.com</small>
+														</div>
+													</div>
+													<div class="ms-auto">
+														<div class="d-flex">
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#chatmodel"><span class="feather feather-message-square"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="call"><span class="feather feather-phone-call"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="Video Cal"><span class="feather feather-video"></span></a>
+															<a class="option-dots new-list2" data-bs-toggle="dropdown"  href="javascript:void(0);"><span class="feather feather-more-vertical"></span></a>
+															<div class="dropdown-menu tx-13 dropdown-menu-start">
+																<a class="dropdown-item"  href="javascript:void(0);">Assigned to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Unread</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Important</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add to Tasks</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add Star</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mute</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to Trash</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /col -->
+									<!-- col -->
+									<div class="col-lg-6">
+										<div class="card">
+											<div class="card-body p-0">
+												<div class="chat-widget-header d-flex p-5">
+													<div class="font-weight-bold d-flex">
+														<img  class="avatat avatar-md brround me-2" src="{% static 'assets/images/users/12.jpg'%}" alt="img">
+														<div class="mt-1 d-none d-xl-block">
+															<h6 class="font-weight-semibold mb-0">Veronica Kimer</h6>
+															<small>veronicakimer@gmail.com</small>
+														</div>
+													</div>
+													<div class="ms-auto">
+														<div class="d-flex">
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#chatmodel"><span class="feather feather-message-square"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="call"><span class="feather feather-phone-call"></span></a>
+															<a class="option-dots new-list2"  href="javascript:void(0);" data-bs-placement="top" data-bs-toggle="tooltip" title="Video Cal"><span class="feather feather-video"></span></a>
+															<a class="option-dots new-list2" data-bs-toggle="dropdown"  href="javascript:void(0);"><span class="feather feather-more-vertical"></span></a>
+															<div class="dropdown-menu tx-13 dropdown-menu-start">
+																<a class="dropdown-item"  href="javascript:void(0);">Assigned to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Unread</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mark As Important</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add to Tasks</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Add Star</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Mute</a>
+																<a class="dropdown-item"  href="javascript:void(0);">Move to Trash</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /col -->
+								</div>
+							</div>
+						</div>
+                        <!-- END ROW -->
+        {% endblock %}
+
+		{% block modal %}
+			<!-- MESSAGE MODAL -->
+            <div class="modal fade"  id="chatmodel">
+				<div class="modal-dialog modal-dialog-right chatbox" role="document">
+					<div class="modal-content chat border-0">
+						<div class="card overflow-hidden mb-0 border-0">
+							<!-- action-header -->
+							<div class="action-header">
+								<div class="float-start hidden-xs d-flex ms-2">
+									<div class="img_cont me-3">
+										<img src="{% static 'assets/images/users/16.jpg'%}" class="rounded-circle user_img avatar avatar-md" alt="img">
+									</div>
+									<div class="align-items-center mt-2 text-white">
+										<h5 class="mb-0">Abigali kelly</h5>
+										<span class="w-2 h-2 brround bg-success d-inline-block"></span><span class="ms-2 fs-12">online</span>
+									</div>
+								</div>
+								<ul class="ah-actions actions align-items-center">
+									<li class="call-icon">
+										<a href="javascript:void(0);" class="d-done d-md-block phone-button">
+											<span class="feather feather-phone-call"></span>
+										</a>
+									</li>
+									<li class="video-icon">
+										<a href="javascript:void(0);" class="d-done d-md-block phone-button">
+											<span class="feather feather-video"></span>
+										</a>
+									</li>
+									<li class="dropdown">
+										<a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="true">
+											<span class="feather feather-more-vertical"></span>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-end">
+											<li><i class="fa fa-user-circle"></i> View profile</li>
+											<li><i class="fa fa-users"></i> Add to close friends</li>
+											<li><i class="fa fa-plus"></i> Add to group</li>
+											<li><i class="fa fa-ban"></i> Block</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0);"  class="" data-bs-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true"><span class="feather feather-x"></span></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- action-header end -->
+							<!-- msg_card_body -->
+							<div class="card-body msg_card_body">
+								<div class="chat-box-single-line">
+									<abbr class="timestamp">February 1st, 2021</abbr>
+								</div>
+								<div class="d-flex justify-content-start">
+									<div class="img_cont_msg">
+										<img src="{% static 'assets/images/users/9.jpg'%}" class="rounded-circle user_img_msg" alt="img">
+									</div>
+									<div class="msg_cotainer">
+										Hi, how are you Jenna Side?
+										<span class="msg_time">8:40 AM, Today</span>
+									</div>
+								</div>
+								<div class="d-flex justify-content-end ">
+									<div class="msg_cotainer_send">
+										Hi Connor Paige i am good tnx how about you?
+										<span class="msg_time_send">8:55 AM, Today</span>
+									</div>
+									<div class="img_cont_msg">
+										<img src="{% static 'assets/images/users/16.jpg'%}" class="rounded-circle user_img_msg" alt="img">
+									</div>
+								</div>
+								<div class="d-flex justify-content-start ">
+									<div class="img_cont_msg">
+										<img src="{% static 'assets/images/users/9.jpg'%}" class="rounded-circle user_img_msg" alt="img">
+									</div>
+									<div class="msg_cotainer">
+										I am good too, thank you for your chat template
+										<span class="msg_time">9:00 AM, Today</span>
+									</div>
+								</div>
+								<div class="d-flex justify-content-end ">
+									<div class="msg_cotainer_send">
+										You welcome Connor Paige
+										<span class="msg_time_send">9:05 AM, Today</span>
+									</div>
+									<div class="img_cont_msg">
+										<img src="{% static 'assets/images/users/16.jpg'%}" class="rounded-circle user_img_msg" alt="img">
+									</div>
+								</div>
+								<div class="d-flex justify-content-start ">
+									<div class="img_cont_msg">
+										<img src="{% static 'assets/images/users/9.jpg'%}" class="rounded-circle user_img_msg" alt="img">
+									</div>
+									<div class="msg_cotainer">
+										Yo, Can you update Views?
+										<span class="msg_time">9:07 AM, Today</span>
+									</div>
+								</div>
+								<div class="d-flex justify-content-end mb-4">
+									<div class="msg_cotainer_send">
+										But I must explain to you how all this mistaken  born and I will give
+										<span class="msg_time_send">9:10 AM, Today</span>
+									</div>
+									<div class="img_cont_msg">
+										<img src="{% static 'assets/images/users/16.jpg'%}" class="rounded-circle user_img_msg" alt="img">
+									</div>
+								</div>
+								<div class="d-flex justify-content-start ">
+									<div class="img_cont_msg">
+										<img src="{% static 'assets/images/users/9.jpg'%}" class="rounded-circle user_img_msg" alt="img">
+									</div>
+									<div class="msg_cotainer">
+										Yo, Can you update Views?
+										<span class="msg_time">9:07 AM, Today</span>
+									</div>
+								</div>
+								<div class="d-flex justify-content-end mb-4">
+									<div class="msg_cotainer_send">
+										But I must explain to you how all this mistaken  born and I will give
+										<span class="msg_time_send">9:10 AM, Today</span>
+									</div>
+									<div class="img_cont_msg">
+										<img src="{% static 'assets/images/users/16.jpg'%}" class="rounded-circle user_img_msg" alt="img">
+									</div>
+								</div>
+								<div class="d-flex justify-content-start ">
+									<div class="img_cont_msg">
+										<img src="{% static 'assets/images/users/9.jpg'%}" class="rounded-circle user_img_msg" alt="img">
+									</div>
+									<div class="msg_cotainer">
+										Yo, Can you update Views?
+										<span class="msg_time">9:07 AM, Today</span>
+									</div>
+								</div>
+								<div class="d-flex justify-content-end mb-4">
+									<div class="msg_cotainer_send">
+										But I must explain to you how all this mistaken  born and I will give
+										<span class="msg_time_send">9:10 AM, Today</span>
+									</div>
+									<div class="img_cont_msg">
+										<img src="{% static 'assets/images/users/16.jpg'%}" class="rounded-circle user_img_msg" alt="img">
+									</div>
+								</div>
+								<div class="d-flex justify-content-start">
+									<div class="img_cont_msg">
+										<img src="{% static 'assets/images/users/9.jpg'%}" class="rounded-circle user_img_msg" alt="img">
+									</div>
+									<div class="msg_cotainer">
+										Okay Bye, text you later..
+										<span class="msg_time">9:12 AM, Today</span>
+									</div>
+								</div>
+							</div>
+							<!-- msg_card_body end -->
+							<!-- card-footer -->
+							<div class="card-footer">
+								<div class="msb-reply-button d-flex">
+									<div class="input-group">
+										<input type="text" class="form-control  bg-white" placeholder="Typing....">
+										<div class="input-group-append ">
+											<button  class="btn btn-primary ">
+												<span class="feather feather-send"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div><!-- card-footer end -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END MESSAGE MODAL -->
+        {% endblock %}
+		
+    {% block scripts %}
+        <!-- THEME COLOR JS -->
+		<script src="{% static 'assets/js/themeColors.js'%}"></script>
+	{% endblock %}

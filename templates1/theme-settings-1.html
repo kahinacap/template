@@ -1,0 +1,36 @@
+{% extends 'components/theme-base.html' %}
+{% load static %}
+
+    {% block styles %}
+
+    {% endblock %}
+
+		{% block themeswitcher %}
+			<!-- SWITCHER -->
+			{% include 'components/layouts/switcher.html' %}
+			<!-- SWITCHER END-->
+        {% endblock %}
+
+        {% block content %}
+		<!-- PAGE HEADER -->
+                        <div class="page-header d-lg-flex d-block">
+							<div class="page-leftheader">
+								<div class="page-title">Theme-settings-1</div>
+							</div>
+							<div class="page-rightheader ms-md-auto">
+								<div class=" btn-list">
+									<button  class="btn btn-primary demo-icon" title="settings"> <i class="feather feather-settings  fe-spin text-white"></i></button>
+								</div>
+							</div>
+						</div>
+						<!-- END PAGE HEADER -->				
+        {% endblock %}
+
+		{% block modal %}
+			
+        {% endblock %}
+		
+    {% block scripts %}
+		<!-- THEME COLOR JS -->
+		<script src="{% static 'assets/js/themeColors.js'%}"></script>
+	{% endblock %}
